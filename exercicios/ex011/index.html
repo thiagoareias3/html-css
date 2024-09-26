@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Teste Mídias - HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tentar abrir o site em tamanhos diferentes de navegador, ou simulando outros dispositivos</p>
+    <picture>
+        <source media="(max-width: 550px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h3>Teste utilizando o desenho da Lulet</h3>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/Lulet_web_p.jpg" type="image/jpeg">
+        <source media="(max-width:1200px)" srcset="imagens/Lulet_web_m.jpg" type="image/jpeg">
+        <img src="imagens/Lulet_web_g.jpg" alt="Ilustração flexível">
+    </picture>
+    <p>Teste de música</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midias/Nature Nurture - Quincas Moreira.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

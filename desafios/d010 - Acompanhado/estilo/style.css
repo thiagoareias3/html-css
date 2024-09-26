@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: "iDroid";
+    src: url(../fontes/idroid.otf);
+}
+
+/*
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+*/
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'iDroid', cursive;
+}
+
+header {
+    background-image: linear-gradient(var(--cor2), var(--cor4));
+    width:100%;
+    color:white;
+    font-family: var(--fonte-padrao);
+/*  
+Se eu quiser deixar o header grudado no topo da tela enquanto desço, faria desse jeito. Porém, isso faz a sombra passar por cima do main. Até onde eu aprendi, pelo menos.
+    position: sticky;
+    top:0; */
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.188);
+}
+
+header > h1 {
+    font-weight: normal;
+    text-align: center;
+    margin:0px;
+    padding:40px 16px 16px 16px;
+    text-shadow: 3px 3px 0px #00000077;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+}
+
+header > p {
+    background-color: transparent;
+    text-align:center;
+    margin: auto;
+    padding-bottom: 16px;
+    color:rgba(255, 255, 255, 0.908);
+    width: 50%;
+    min-width:350px;
+    font-size: 1.0em;
+    text-shadow: 2px 2px 1px #00000077;
+    text-indent: 0;
+}
+
+nav {
+    text-align: left;
+    margin-left: auto;
+    position:sticky;
+    top:0;
+    background-color: var(--cor4);
+}
+
+nav > a {
+    display: inline-block;
+    color: white;
+    text-align:left;
+    margin: 25px;
+    margin-right:15px;
+    padding: 0px;
+    font-size: 0.8em;
+    font-weight: bold;
+    transition: 0.2s ease-in;
+    text-decoration:none;
+}
+
+nav > a:hover {
+    transition: 0.15s ease-in-out;
+    color: var(--cor4);
+    background-color: var(--cor2);
+    border-radius: 15px;
+    padding: 18px;
+    margin: 7px;
+    margin-right:-3px;
+}
+
+body {
+    margin:0px;
+    background-color:#c5ebd6;
+    text-align: justify;
+    font-family: var(--fonte-padrao);
+}
+
+p {
+    font-size: 1em;
+    text-indent: 2em;
+    line-height: 1.8em;
+}
+
+main {
+    background-color: white;
+    margin:0px auto 30px auto;
+    border-radius: 0 0 20px 20px;
+    width:100%;
+    min-width: 300px;
+    max-width: 800px;
+    padding-top: 10px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.188);
+}
+
+main article {
+    padding:10px;
+}
+
+main article h1 {
+    margin-top:0px;
+    padding-left: 10px;
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size:1.5em;
+    color: var(--cor4);
+}
+
+main article h2 {
+    margin-left:10px;
+    margin-right: 10px;
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size:1.2em;
+    color: var(--cor4);
+    padding: 2px 10px 2px 10px;
+    border-left: 5px solid var(--cor4);
+    border-radius: 8px 0 0 8px;
+    background-image:linear-gradient(to right, #3cd98357, transparent);
+}
+
+main article p {
+    padding: 0px 10px 0px 10px;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+main a, main strong {
+    color: #1d7c48;
+    font-weight:bold;
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+    padding:3px 3px 3px 3px;
+}
+
+main a::after {
+    content: "\1F517";
+}
+
+main a:hover {
+    background-color: #1a5c37e8;
+    border-radius: 5px;
+    color:var(--cor2);
+    text-decoration: underline;
+}
+
+main img {
+    margin:auto;
+    width:100%;
+    display: block;
+}
+
+img#bugdroid {
+    width: 65%;
+    max-width: 350px;
+    min-width: 150px;
+    margin: auto;
+}
+
+img#trimmed-cover {
+    object-fit: cover;
+    min-height: 214px;
+    object-position: center;
+}
+
+#videowrapper {
+    margin: 10px -10px 20px -10px;
+    background-color: var(--cor4);
+    padding:3% 4%;
+}
+
+div > iframe {
+    width:100%;
+    aspect-ratio: 16/9;
+}
+
+footer {
+    background-color: var(--cor4);
+    color:rgba(255, 255, 255, 0.733);
+    text-align: center;
+    padding:10px;
+    font-size:0.8em;
+    font-style: italic;
+}
+
+footer > a {
+    text-decoration: none;
+    color:white;
+}
+
+footer > a:hover {
+    font-weight:bold;
+    text-decoration: underline;
+    color:var(--cor0);
+}
+
+aside {
+    background-image: linear-gradient(to bottom, #c5ebd6, #20fd8715);
+    background-color: #C5EBD6;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.188);
+    margin: 10px 5px;
+    padding-bottom:10px;
+}
+
+aside > h3 {
+    margin:0px;
+    margin-bottom: 10px;
+    padding:10px;
+    color:white;
+    font-size: 1em;
+    background-color: var(--cor3);
+    border-radius: 10px 10px 0 0;
+}
+
+aside > p {
+    padding:10px;
+    margin:0px;
+}
+
+ul {
+    list-style-type: "\2714";
+    list-style-position: inside;
+    text-align: left;
+    margin-left:auto;
+    columns: 2;
+}
+
+li {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    padding-left:8px;
+}
+
+li:hover {
+    color: var(--cor4);
+    transition: 0.15s ease-in-out;
+}
+
+#footer-img {
+    object-fit:cover;
+    margin-left:87%;
+    width:30px;
+    height:18px;
+}
+/*
+div#table {
+    background-color: #C5EBD6;
+    border-radius: 5px;
+    padding:5px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.288);
+}
+
+div#table > h2 {
+    margin:0px;
+    padding:5px;
+    background-color: #2FA866;
+}
+
+
+table {
+    margin:10px;
+    border-radius: 5px;
+    padding:5px;
+    border-collapse: collapse;
+    border: 0px none transparent;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.288);
+}
+
+tbody {
+    border-collapse: collapse;
+    border: 0px none transparent;
+}
+
+th {
+    padding:5px;
+    background-color: #2FA866;
+    color:white;
+    font-weight: bold;
+    text-align: left;
+}
+
+td {
+    padding:5px;
+    background-color:#C5EBD6;
+}

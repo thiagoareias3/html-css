@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Protest+Guerrilla&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+div > p {
+    display:none;
+}
+div > h1 {
+    font-size: 1.75em;
+    font-weight: normal;
+}
+div:hover > p {
+    display:block;
+    color:white;
+    background-color:green;
+    font-size: 1.5em;
+}
+div:hover > h1 {
+    display:none;
+    color:red;
+}
