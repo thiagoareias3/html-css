@@ -64,13 +64,13 @@ main {
     margin:0px auto 30px auto;
     border-radius: 0 0 20px 20px;
     width:60%;
-    min-width:500px;
     padding-top: 10px;
     box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.188);
 }
 
 main > div {
     padding:10px;
+    min-width:500px;
 }
 
 main > div > h1 {
