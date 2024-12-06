@@ -48,6 +48,18 @@ header > div {
     font-weight: bold;
 }
 
+header > div:hover {
+    background-color:#3CD983;
+    color:#1A5C38;
+    padding: 6px;
+    margin: 4px;
+    border-radius: 5px;
+    transition:
+    margin 0.1s,
+    padding 0.1s,
+    background-color 0.5s;
+}
+
 body {
     margin:0px;
     background-color:#84E1AD;
