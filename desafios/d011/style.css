@@ -1,0 +1,13 @@
+header {
+    margin-left:auto;
+    text-align: center;
+    padding:20px;
+    color:white;
+    background-color:black;
+}
+header > h1 {
+    margin-bottom:-5px;
+}
+div.transparent {
+    background-color: black;
+}

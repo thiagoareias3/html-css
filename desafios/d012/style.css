@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+
+html,body {
+    min-height:100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    margin:-8px;
+    text-align: center;
+    padding-bottom:50px;
+    padding-top:5px;
+    color:white;
+    background-color:black;
+}
+
+header > h1 {
+    font-family: var(--fonte2);
+    font-size:10vw;
+    margin-bottom:-5px;
+    font-variant: small-caps;
+}
+
+section {
+    margin:-8px;
+    background-color: rgb(255, 250, 232);
+    padding: 10vh 30px;
+    line-height:2em;
+    font-family: var(--fonte3);
+    font-size:3.5vw;
+}
+
+section.normal {
+    box-shadow: 0px 10px 10px black;
+}
+
+section.transparent {
+    background-color: white;
+    color: white;
+}
+
+section.transparent > p {
+    background-color:rgba(0, 0, 0, 0.459);
+    padding:10px;
+    margin:-10px;
+    width: fit-content;
+}
+
+#ladybug {
+    background-image: url(imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#book {
+    background-image: url(imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 10px;
+    margin: -8px;
+}
+
+a {
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(118, 154, 221);
+    font-weight: bold;
+    text-decoration: underline;
+}
