@@ -38,13 +38,10 @@ section {
     font-size:3.5vw;
 }
 
-section.normal {
-    box-shadow: 0px 10px 10px black;
-}
-
 section.transparent {
     background-color: white;
     color: white;
+    box-shadow: inset 6px 6px 20px 0px rgba(0, 0, 0, 0.801);
 }
 
 section.transparent > p {
@@ -52,6 +49,7 @@ section.transparent > p {
     padding:10px;
     margin:-10px;
     width: fit-content;
+    text-shadow: 1px 1px 0px black;
 }
 
 #ladybug {
